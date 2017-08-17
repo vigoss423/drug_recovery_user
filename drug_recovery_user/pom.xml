@@ -136,6 +136,10 @@
 			<artifactId>blue-ocean-common-kit</artifactId>
 			<version>${common.kit}</version>
 		</dependency>
+				<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.github.pagehelper/pagehelper -->
 		<dependency>
 			<groupId>com.github.pagehelper</groupId>

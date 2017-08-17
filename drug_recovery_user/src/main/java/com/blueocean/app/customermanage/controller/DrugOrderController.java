@@ -39,11 +39,10 @@ public class DrugOrderController {
 		// ��ȡ���յ�����
 		PharmacyResponseDTO data = pharmacyManageInfo.getDrugRecycleInfo(record.getDrugRecycleSiteId());
 		if (data != null) {
-			ret.setData(String.format("两小时内，店员%s(%s)会与您联系。优惠券在完成药品回收1分钟内会发到您手机上。", data.getContactName(),
-					data.getContactPhone()));
-		} else {
-			ret.setData("两小时内，店员会与您联系。优惠券在完成药品回收1分钟内会发到您手机上。");
-		}
+			String msg=String.format("%s %s", data.getSiteName(),
+					data.getContactPhone());
+			ret.setData(msg);
+		} 
 		return ret;
 	}
 

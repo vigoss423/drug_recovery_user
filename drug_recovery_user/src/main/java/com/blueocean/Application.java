@@ -24,7 +24,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
  */
 @RestController
 @EnableWebMvc
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages ={"com.blueocean"})
 @EnableConfigurationProperties //注入配置文件属性扫描
 @ImportResource(locations = {"classpath:config/default-conf.xml"})
 public class Application {
