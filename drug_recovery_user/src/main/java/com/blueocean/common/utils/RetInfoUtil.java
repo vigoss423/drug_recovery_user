@@ -18,17 +18,17 @@ public class RetInfoUtil {
 		return initRetInfo(RetInfoConstant.RETCODE_NEED_LOGIN, RetInfoConstant.RETMSG_NOT_LOGIN);
 	}
 	public static RetInfo initRetInfo4ErrTime() {
-		return initRetInfo(RetInfoConstant.RETCODE_UNKOWN_ERROR, RetInfoConstant.RETMSG_EXCEPTION_MSG,RetInfoConstant.acceptTime);
+		return initRetInfo(RetInfoConstant.RETCODE_UNKOWN_ERROR, RetInfoConstant.RETMSG_EXCEPTION_MSG,String.valueOf(System.currentTimeMillis()));
 	}
 	public static RetInfo initRetSessionErrTime() {
-		return initRetInfo(RetInfoConstant.RETCODE_SESSION_LOSE_EFFICACY, RetInfoConstant.RETMSG_SESSION_LOSE_EFFICACY,RetInfoConstant.acceptTime);
+		return initRetInfo(RetInfoConstant.RETCODE_SESSION_LOSE_EFFICACY, RetInfoConstant.RETMSG_SESSION_LOSE_EFFICACY,String.valueOf(System.currentTimeMillis()));
 	}
 	public static RetInfo initRetInfo4SuccTime() {
-		return initRetInfo(RetInfoConstant.RETCODE_SUCCESS, RetInfoConstant.RETMSG_SUCCESS_MSG,RetInfoConstant.acceptTime);
+		return initRetInfo(RetInfoConstant.RETCODE_SUCCESS, RetInfoConstant.RETMSG_SUCCESS_MSG,String.valueOf(System.currentTimeMillis()));
 	}
 
 	public static RetInfo initRetInfo4NeedLoginTime() {
-		return initRetInfo(RetInfoConstant.RETCODE_NEED_LOGIN, RetInfoConstant.RETMSG_NOT_LOGIN,RetInfoConstant.acceptTime);
+		return initRetInfo(RetInfoConstant.RETCODE_NEED_LOGIN, RetInfoConstant.RETMSG_NOT_LOGIN,String.valueOf(System.currentTimeMillis()));
 	}
 	/**
 	 * 
