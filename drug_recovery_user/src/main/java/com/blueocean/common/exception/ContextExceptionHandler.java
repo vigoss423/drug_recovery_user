@@ -19,7 +19,7 @@ import com.blueocean.common.vo.RetInfo;
 
 
 
-@RestControllerAdvice(basePackages = {"com.bluesea"})
+@RestControllerAdvice(basePackages = {"com.blueocean"})
 public class ContextExceptionHandler {
 	
 	private static final RetInfo ret = RetInfoUtil.initRetInfo4Err();
