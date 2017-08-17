@@ -38,7 +38,7 @@
   <!-- 事务 AOP 配置 -->
   <aop:config proxy-target-class = "true">
     <aop:pointcut id = "htssInterceptorPointCuts"
-                  expression = "execution( * com.blueocean.web.*.service.*Impl.*(..))"/>
+                  expression = "execution( * com.blueocean.app.*.service.*Impl.*(..))"/>
     <aop:advisor advice-ref = "htssTxAdvice" pointcut-ref = "htssInterceptorPointCuts"/>
   </aop:config>
 </beans>
